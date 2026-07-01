@@ -1,0 +1,61 @@
+timestamp,sender,leave_type,dates,status,message,needs_review,is_correction,source_file
+2026-06-24 11:56:32,Priya Sharma,CL,25 Jun 2026,updated,Updated 1 day(s),False,False,casual_leave_01.txt
+2026-06-24 11:56:32,Neha Patel,SL,23 Jun 2026,updated,Updated 1 day(s),True,True,correction_email_01.txt
+2026-06-24 11:56:32,Sneha Reddy,EL,"23 Jun 2026, 24 Jun 2026",updated,Updated 2 day(s),False,False,emergency_leave_01.txt
+2026-06-24 11:56:32,Anil Deshmukh,HD,25 Jun 2026,updated,Updated 1 day(s),True,False,half_day_01.txt
+2026-06-24 11:56:32,Kavita Nair,PL,"29 Jun 2026, 30 Jun 2026, 01 Jul 2026, 02 Jul 2026",updated,Updated 4 day(s),False,False,multi_day_01.txt
+2026-06-24 11:56:33,Rahul Mehta,PL,"06 Jul 2026, 07 Jul 2026, 08 Jul 2026, 09 Jul 2026, 10 Jul 2026",skipped,Protected code 'WFH' in cell,False,False,planned_leave_01.txt
+2026-06-24 11:56:33,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",updated,Updated 2 day(s),False,False,sick_leave_01.txt
+2026-06-24 11:56:33,Vikram Joshi,CL,26 Jun 2026,updated,Updated 1 day(s),False,False,vague_email_01.txt
+2026-06-24 12:09:01,Priya Sharma,CL,25 Jun 2026,updated,Updated 1 day(s),False,False,casual_leave_01.txt
+2026-06-24 12:09:01,Neha Patel,SL,23 Jun 2026,updated,Updated 1 day(s),True,True,correction_email_01.txt
+2026-06-24 12:09:01,Sneha Reddy,EL,"23 Jun 2026, 24 Jun 2026",updated,Updated 2 day(s),False,False,emergency_leave_01.txt
+2026-06-24 12:09:01,Anil Deshmukh,HD,25 Jun 2026,updated,Updated 1 day(s),True,False,half_day_01.txt
+2026-06-24 12:09:01,Kavita Nair,PL,"29 Jun 2026, 30 Jun 2026, 01 Jul 2026, 02 Jul 2026",updated,Updated 4 day(s),False,False,multi_day_01.txt
+2026-06-24 12:09:01,Rahul Mehta,PL,"06 Jul 2026, 07 Jul 2026, 08 Jul 2026, 09 Jul 2026, 10 Jul 2026",skipped,Protected code 'WFH' in cell,False,False,planned_leave_01.txt
+2026-06-24 12:09:01,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",updated,Updated 2 day(s),False,False,sick_leave_01.txt
+2026-06-24 12:09:01,Vikram Joshi,CL,26 Jun 2026,updated,Updated 1 day(s),False,False,vague_email_01.txt
+2026-06-24 14:11:05,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:26:28,Priya Sharma,CL,25 Jun 2026,skipped,Already has leave code 'CL',False,False,casual_leave_01.txt
+2026-06-24 14:26:28,Neha Patel,SL,23 Jun 2026,updated,Updated 1 day(s),True,True,correction_email_01.txt
+2026-06-24 14:26:28,Sneha Reddy,EL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'EL',False,False,emergency_leave_01.txt
+2026-06-24 14:26:28,Anil Deshmukh,HD,25 Jun 2026,skipped,Already has leave code 'HD',True,False,half_day_01.txt
+2026-06-24 14:26:28,Kavita Nair,PL,"29 Jun 2026, 30 Jun 2026, 01 Jul 2026, 02 Jul 2026",skipped,Already has leave code 'PL',False,False,multi_day_01.txt
+2026-06-24 14:26:28,Rahul Mehta,PL,"06 Jul 2026, 07 Jul 2026, 08 Jul 2026, 09 Jul 2026, 10 Jul 2026",skipped,Already has leave code 'PL'; Protected code 'WFH' in cell,False,False,planned_leave_01.txt
+2026-06-24 14:26:29,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:26:29,Vikram Joshi,CL,26 Jun 2026,skipped,Already has leave code 'CL',False,False,vague_email_01.txt
+2026-06-24 14:40:44,"""Adobe""",CL,none,error,No dates found,True,False,20260624_144043.txt
+2026-06-24 14:40:44,"""Adobe Acrobat""",CL,none,error,No dates found,True,False,20260624_144044.txt
+2026-06-24 14:40:44,"""Adobe Express""",PL,none,error,No dates found,False,False,20260624_144044.txt
+2026-06-24 14:40:44,"""Adobe""",CL,none,error,No dates found,True,False,20260624_144044.txt
+2026-06-24 14:40:44,Poovarasan D,CL,24 Jun 2026,unmatched,No match for 'Poovarasan D' (best: 'Priya Sharma' at 41.666666666666664%),True,False,20260624_144044.txt
+2026-06-24 14:58:19,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:58:31,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:58:38,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:58:44,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:59:09,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:59:15,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:59:22,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:59:28,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:59:52,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 14:59:59,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 15:00:05,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'SL',False,False,sick_leave_01.txt
+2026-06-24 15:52:02,Poovarasan D,CL,24 Jun 2026,updated,Updated 1 day(s),True,False,20260624_155200.txt
+2026-06-25 10:10:17,Priya Sharma,CL,25 Jun 2026,updated,Updated 1 day(s),False,False,casual_leave_01.txt
+2026-06-25 10:10:19,Neha Patel,SL,23 Jun 2026,updated,Updated 1 day(s),True,True,correction_email_01.txt
+2026-06-25 10:10:23,Sneha Reddy,EL,"23 Jun 2026, 24 Jun 2026",updated,Updated 2 day(s),False,False,emergency_leave_01.txt
+2026-06-25 10:10:26,Anil Deshmukh,HD,25 Jun 2026,updated,Updated 1 day(s),True,False,half_day_01.txt
+2026-06-25 10:10:34,Kavita Nair,PL,"29 Jun 2026, 30 Jun 2026, 01 Jul 2026, 02 Jul 2026",updated,Updated 4 day(s),False,False,multi_day_01.txt
+2026-06-25 10:10:45,Rahul Mehta,PL,"06 Jul 2026, 07 Jul 2026, 08 Jul 2026, 09 Jul 2026, 10 Jul 2026",skipped,Protected code 'WFH' in cell,False,False,planned_leave_01.txt
+2026-06-25 10:10:49,Dhanush Kumar,SL,"23 Jun 2026, 24 Jun 2026",updated,Updated 2 day(s),False,False,sick_leave_01.txt
+2026-06-25 10:10:51,Vikram Joshi,CL,26 Jun 2026,updated,Updated 1 day(s),False,False,vague_email_01.txt
+2026-06-25 10:38:50,phoenix,SL,25 Jun 2026,unmatched,No match for 'phoenix' (best: 'Anil' at 51.42857142857142%),False,False,20260625_103847.txt
+2026-06-25 10:41:10,M Dhanush,SL,25 Jun 2026,updated,Updated 1 day(s),False,False,20260625_104107.txt
+2026-06-25 10:46:58,Uthiran Kuppan,SL,25 Jun 2026,updated,Updated 1 day(s),True,False,20260625_104655.txt
+2026-06-25 11:48:24,Priya Sharma,CL,25 Jun 2026,skipped,Already has leave code 'CL',False,False,casual_leave_01.txt
+2026-06-25 11:48:26,Neha Patel,SL,23 Jun 2026,updated,Updated 1 day(s),True,True,correction_email_01.txt
+2026-06-25 11:48:30,Sneha Reddy,EL,"23 Jun 2026, 24 Jun 2026",skipped,Already has leave code 'EL',False,False,emergency_leave_01.txt
+2026-06-25 11:48:32,Anil Deshmukh,HD,25 Jun 2026,skipped,Already has leave code 'HD',True,False,half_day_01.txt
+2026-06-25 14:29:26,M Dhanush,SL,25 Jun 2026,updated,Updated 1 day(s),True,False,20260625_142923.txt
+2026-06-30 12:51:26,Swetha,SL,none,error,No dates found,False,False,20260630_125120.txt
+2026-06-30 12:56:05,Swetha,SL,30 Jun 2026,updated,Updated 1 day(s),False,False,20260630_125600.txt

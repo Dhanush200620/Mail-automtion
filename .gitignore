@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL archive folder
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editor configuration
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+``
+# Sensitive Configuration & Credentials
+config.json
+google_credentials.json
+
+# Local Excel Trackers & Temporary Logs
+*.xlsx
+audit_log.csv
+unmatched_log.csv
+fetched_emails/

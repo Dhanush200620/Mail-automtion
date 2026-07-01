@@ -1,0 +1,85 @@
+{
+    "excel_path": "your_leave_tracker.xlsx",
+    "fuzzy_threshold": 75,
+    "protected_codes": [
+        "WFH",
+        "WS",
+        "WO",
+        "OH",
+        "HL"
+    ],
+    "leave_keywords": {
+        "SL": [
+            "sick",
+            "fever",
+            "unwell",
+            "hospital",
+            "medical",
+            "doctor",
+            "not feeling well",
+            "health",
+            "illness",
+            "infection"
+        ],
+        "CL": [
+            "casual",
+            "personal work",
+            "errand",
+            "urgent work",
+            "out of office",
+            "short leave",
+            "half day"
+        ],
+        "EL": [
+            "emergency",
+            "accident",
+            "family emergency",
+            "sudden",
+            "urgent personal",
+            "bereavement",
+            "loss",
+            "critical"
+        ],
+        "PL": [
+            "planned",
+            "vacation",
+            "holiday",
+            "travel",
+            "annual leave",
+            "pre-approved",
+            "approved leave"
+        ]
+    },
+    "half_day_keywords": [
+        "half day",
+        "half-day",
+        "4 hours",
+        "morning off",
+        "afternoon off"
+    ],
+    "leave_priority": [
+        "EL",
+        "SL",
+        "PL",
+        "CL"
+    ],
+    "subject_keywords": [
+        "leave",
+        "sick",
+        "absent",
+        "holiday",
+        "emergency"
+    ],
+    "imap_server": "imap.gmail.com",
+    "imap_port": 993,
+    "imap_user": "your_email@example.com",
+    "imap_password": "your_app_password_here",
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "your_email@example.com",
+    "smtp_password": "your_app_password_here",
+    "sample_emails_folder": "sample_emails",
+    "use_google_sheets": false,
+    "google_sheet_name": "your_leave_tracker",
+    "google_credentials_file": "google_credentials.json"
+}

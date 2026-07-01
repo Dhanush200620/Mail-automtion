@@ -1,0 +1,6 @@
+openpyxl==3.1.5
+rapidfuzz==3.9.7
+dateparser==1.2.0
+msal==1.31.0
+gspread
+oauth2client
