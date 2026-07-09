@@ -341,14 +341,37 @@ def create_test_excel(path):
     
     # sample team members (made up names for testing)
     team = [
-        ("MDM BAU", "Dhanush Kumar"),
-        ("MDM BAU", "Priya Sharma"),
-        ("MDM BAU", "Rahul Mehta"),
-        ("MDM BAU", "Sneha Reddy"),
-        ("MDM BAU", "Anil Deshmukh"),
-        ("MDM BAU", "Kavita Nair"),
-        ("MDM BAU", "Vikram Joshi"),
-        ("MDM BAU", "Neha Patel"),
+        ("MDM-BAU", "Kavivanan"),
+        ("MDM-BAU", "Leando Iruthayaraj"),
+        ("MDM-BAU", "Vibra Narayanan"),
+        ("MDM-BAU", "Aravind"),
+        ("MDM-BAU", "Jaya Shree"),
+        ("MDM - GROW", "Vignesh Pugalendhi"),
+        ("MDM - GROW", "Sujitha"),
+        ("MDM - GROW", "Balaji Loganathan"),
+        ("MDM - GROW", "Ebron Stalin"),
+        ("MDM - GROW", "Rahul Kumar"),
+        ("MDM - GROW", "Harivarshan"),
+        ("MDM - GROW", "BharaniDharan"),
+        ("MDM - GROW", "Sandhiya"),
+        ("MDM - GROW", "Jose"),
+        ("CRM - Next Gen", "Dravid"),
+        ("CRM - Next Gen", "Soma Sai Pavan"),
+        ("CRM - Next Gen", "Rathimeena"),
+        ("CRM - Next Gen", "Pavithra"),
+        ("CRM - Next Gen", "Jefflina"),
+        ("CRM - Next Gen", "Manoj"),
+        ("CDS", "Arshad"),
+        ("CDS", "Dushyanth"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Hari Vembeina"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "JP"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Jelsi"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Mahesh Reddy"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Sandeep Reddy"),
+        ("", "Alafia Yusuf Fidvi"),
+        ("", "Arun R"),
+        ("", "Swaminathan"),
+        ("", "Vasanth"),
     ]
     
     # create sheets for Jun and Jul 2026 so we can test multi-month stuff
@@ -398,7 +421,7 @@ def create_test_excel(path):
                     ws.cell(row=row, column=col).value = "WO"
             
             # give some people WFH on Wednesdays (for testing "skip WFH" logic)
-            if name in ["Priya Sharma", "Rahul Mehta"]:
+            if name in ["Jaya Shree", "Rahul Kumar"]:
                 for day in range(1, days_in_month + 1):
                     d = date(year, month_num, day)
                     col = day + 2
@@ -456,14 +479,37 @@ def create_test_google_sheet(sheet_name):
         print("IMPORTANT: Share the sheet with this email as Editor so the script can access it!")
         
     team = [
-        ("MDM BAU", "Dhanush Kumar"),
-        ("MDM BAU", "Priya Sharma"),
-        ("MDM BAU", "Rahul Mehta"),
-        ("MDM BAU", "Sneha Reddy"),
-        ("MDM BAU", "Anil Deshmukh"),
-        ("MDM BAU", "Kavita Nair"),
-        ("MDM BAU", "Vikram Joshi"),
-        ("MDM BAU", "Neha Patel"),
+        ("MDM-BAU", "Kavivanan"),
+        ("MDM-BAU", "Leando Iruthayaraj"),
+        ("MDM-BAU", "Vibra Narayanan"),
+        ("MDM-BAU", "Aravind"),
+        ("MDM-BAU", "Jaya Shree"),
+        ("MDM - GROW", "Vignesh Pugalendhi"),
+        ("MDM - GROW", "Sujitha"),
+        ("MDM - GROW", "Balaji Loganathan"),
+        ("MDM - GROW", "Ebron Stalin"),
+        ("MDM - GROW", "Rahul Kumar"),
+        ("MDM - GROW", "Harivarshan"),
+        ("MDM - GROW", "BharaniDharan"),
+        ("MDM - GROW", "Sandhiya"),
+        ("MDM - GROW", "Jose"),
+        ("CRM - Next Gen", "Dravid"),
+        ("CRM - Next Gen", "Soma Sai Pavan"),
+        ("CRM - Next Gen", "Rathimeena"),
+        ("CRM - Next Gen", "Pavithra"),
+        ("CRM - Next Gen", "Jefflina"),
+        ("CRM - Next Gen", "Manoj"),
+        ("CDS", "Arshad"),
+        ("CDS", "Dushyanth"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Hari Vembeina"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "JP"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Jelsi"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Mahesh Reddy"),
+        ("PowerBI / Tableau / Alteryx / Devops Admin", "Sandeep Reddy"),
+        ("", "Alafia Yusuf Fidvi"),
+        ("", "Arun R"),
+        ("", "Swaminathan"),
+        ("", "Vasanth"),
     ]
     
     # Create sheets for Jun and Jul 2026
@@ -510,7 +556,7 @@ def create_test_google_sheet(sheet_name):
                 val = ""
                 if d.weekday() in [5, 6]:
                     val = "WO"
-                elif name in ["Priya Sharma", "Rahul Mehta"] and d.weekday() == 2:
+                elif name in ["Jaya Shree", "Rahul Kumar"] and d.weekday() == 2:
                     val = "WFH"
                 elif day == 15 and month_num == 6:
                     val = "OH"
@@ -584,50 +630,50 @@ if __name__ == "__main__":
         
     # --- Test 1: basic leave write ---
     print("\n" + "-" * 40)
-    print("[Test 1] Write SL for 'Dhanush Kumar' on June 16 (Tuesday)")
-    success, msg = write_leave(excel_path, "Dhanush Kumar", date(2026, 6, 16), "SL")
+    print("[Test 1] Write SL for 'Kavivanan' on June 16 (Tuesday)")
+    success, msg = write_leave(excel_path, "Kavivanan", date(2026, 6, 16), "SL")
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 2: try to write on a WFH day (should skip) ---
     print("\n" + "-" * 40)
-    print("[Test 2] Try CL for 'Priya Sharma' on June 17 (Wednesday = her WFH day)")
-    success, msg = write_leave(excel_path, "Priya Sharma", date(2026, 6, 17), "CL")
+    print("[Test 2] Try CL for 'Jaya Shree' on June 17 (Wednesday = her WFH day)")
+    success, msg = write_leave(excel_path, "Jaya Shree", date(2026, 6, 17), "CL")
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 3: fuzzy name matching ---
     print("\n" + "-" * 40)
-    print("[Test 3] Fuzzy match: 'Rahul' should find 'Rahul Mehta'")
+    print("[Test 3] Fuzzy match: 'Rahul' should find 'Rahul Kumar'")
     success, msg = write_leave(excel_path, "Rahul", date(2026, 6, 22), "PL")
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 4: don't overwrite existing leave ---
     print("\n" + "-" * 40)
     print("[Test 4] Try to overwrite — write CL on June 16 (already has SL from Test 1)")
-    success, msg = write_leave(excel_path, "Dhanush Kumar", date(2026, 6, 16), "CL")
+    success, msg = write_leave(excel_path, "Kavivanan", date(2026, 6, 16), "CL")
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 5: correction should overwrite ---
     print("\n" + "-" * 40)
     print("[Test 5] Correction — overwrite SL with PL on June 16 (is_correction=True)")
-    success, msg = write_leave(excel_path, "Dhanush Kumar", date(2026, 6, 16), "PL", is_correction=True)
+    success, msg = write_leave(excel_path, "Kavivanan", date(2026, 6, 16), "PL", is_correction=True)
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 6: skip weekend (WO) ---
     print("\n" + "-" * 40)
     print("[Test 6] Try CL on Saturday June 20 (should be WO)")
-    success, msg = write_leave(excel_path, "Sneha Reddy", date(2026, 6, 20), "CL")
+    success, msg = write_leave(excel_path, "Sujitha", date(2026, 6, 20), "CL")
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 7: skip holiday (OH) ---
     print("\n" + "-" * 40)
     print("[Test 7] Try SL on June 15 (office holiday = OH)")
-    success, msg = write_leave(excel_path, "Anil Deshmukh", date(2026, 6, 15), "SL")
+    success, msg = write_leave(excel_path, "Dravid", date(2026, 6, 15), "SL")
     print(f"  -> Result: success={success}, {msg}")
     
     # --- Test 8: multi-day leave ---
     print("\n" + "-" * 40)
-    print("[Test 8] Multi-day EL for 'Kavita Nair' — June 22 to June 25 (Mon-Thu)")
-    results = write_leave_multi_day(excel_path, "Kavita Nair", date(2026, 6, 22), date(2026, 6, 25), "EL")
+    print("[Test 8] Multi-day EL for 'Rathimeena' — June 22 to June 25 (Mon-Thu)")
+    results = write_leave_multi_day(excel_path, "Rathimeena", date(2026, 6, 22), date(2026, 6, 25), "EL")
     print("\n  Summary:")
     for r in results:
         status = "OK" if r["success"] else r["message"]
@@ -641,7 +687,7 @@ if __name__ == "__main__":
     
     # --- Test 10: another fuzzy match ---
     print("\n" + "-" * 40)
-    print("[Test 10] Fuzzy match: 'S. Reddy' -> should find 'Sneha Reddy'")
+    print("[Test 10] Fuzzy match: 'S. Reddy' -> should find 'Sandeep Reddy'")
     success, msg = write_leave(excel_path, "S. Reddy", date(2026, 6, 18), "CL")
     print(f"  -> Result: success={success}, {msg}")
     
